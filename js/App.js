@@ -37,8 +37,9 @@ const banderillas = data => {
                     ${item.region}
                 </p>
                 <p>
-                    <a href="paisInfo.html?name={item.translations.spa.common}">Más info</a>
+                    <a href="paisInfo.html?name=${item.translations.spa.common}">Más info</a>
                 </p>
+            </div>
         </article>
         `
     })
