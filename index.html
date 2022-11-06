@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom-select.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container fix-content navbar-content">
+            <h1>Buscador de Países</h1>
+            <img src="https://escalab.tech/assets/recruitment/logo.svg" alt="">
+        </div>
+    </nav>
+
+    <header class="container fix-content my-2">
+        <form class="form-search" id="formulario">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Buscar..." id="inputFormulario">
+        </form>
+        <div class="custom-select">
+            <select>
+                <option value="">Filtrar por región</option>
+                <option value="">Todos</option>
+                <option value="Africa">África</option>
+                <option value="Americas">América</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europa</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+    </header>
+
+    <main class="container grid" id="banderas">
+        <article class="card">
+            <img src="https://flagcdn.com/co.svg" alt="" class="img-fluid">
+            <div class="card-content">
+                <h3>Nombre</h3>
+                <p>
+                    <b>Población: </b>
+                    500000
+                </p>
+                <p>
+                    <b>Capital: </b>
+                    Bogotá
+                </p>
+                <p>
+                    <b>Región: </b>
+                    América
+                </p>
+                <p>
+                    <a href="paisInfo.html?name={item.translations.spa.common}">Más info</a>
+                </p>
+            </div>
+        </article>
+
+    </main>
+
+    <script src="js/App.js"></script>
+    <script src="js/custom-select.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
